@@ -136,6 +136,25 @@ body {
 	color: var(--darker_green);
 }
 
+#card_feed {
+	
+}
+
+.card {
+	
+}
+
+.card_header {
+	
+}
+
+.card_image {
+	
+}
+
+.card_body {
+	
+}
 
 @media only screen and (max-width: 1083px) {
 	#inner_page_container {

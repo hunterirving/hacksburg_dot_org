@@ -24,9 +24,13 @@ body {
 	overflow: hidden;
 }
 
-#hacksignia {
+.hacksignia {
 	max-width: 105px;
 	margin-right:15px;
+}
+
+#hacksignia_dark {
+	display: none;
 }
 
 #header_text {
@@ -34,6 +38,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	color: var(--black)
 }
 
 #header_text > h1 {
@@ -51,7 +56,7 @@ body {
 
 .nodecor {
 	text-decoration: none;
-	color: var(--text);
+	color: var(--black);
 	transition: color ease-in-out .15s;
 }
 
@@ -77,8 +82,8 @@ body {
 #marquee_container {
 	overflow: hidden;
 	white-space: nowrap;
-	background-color: black;
-	color: white;
+	background-color: var(--black);
+	color: var(--white);
 	position: relative;
 	padding-bottom:2px;
 }
@@ -171,5 +176,20 @@ body {
 @media only screen and (max-width: 1023px) {
 	#nav_break {
 		display: flex;
+	}
+}
+
+/* Light mode by default, use dark mode when preferred */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--black: #ffffff;
+		--white: #000000;
+		--darker_green: #00cf00;
+	}
+	#hacksignia_light {
+		display: none;
+	}
+	#hacksignia_dark {
+		display: inline-block;
 	}
 }

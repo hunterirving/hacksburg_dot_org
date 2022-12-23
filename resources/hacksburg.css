@@ -25,7 +25,7 @@ body {
 }
 
 #hacksignia {
-	max-width: 100px;
+	max-width: 105px;
 	margin-right:15px;
 }
 
@@ -106,6 +106,7 @@ body {
 }
 
 #inner_page_container {
+
 }
 
 .nav_links {
@@ -115,11 +116,14 @@ body {
 	padding-top:10px;
 	transition: color .15s ease-in-out, opacity .15s ease-in-out, max-height .15s ease-in-out;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
-.nav_two_lines {
+.break {
 	display: none;
+	flex-basis: 100%;
+	height: 0;
 }
 
 .nav_links > a {
@@ -164,10 +168,7 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
-	.nav_one_line {
-		display: none;
-	}
-	.nav_two_lines {
+	.break {
 		display: flex;
 	}
 }

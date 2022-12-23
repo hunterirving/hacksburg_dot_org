@@ -1,0 +1,3 @@
+/* onload...
+		for each nav_link that is not the current_page
+			add onhover="dim_current_page()"

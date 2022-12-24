@@ -118,7 +118,6 @@ body {
 	font-size:26px;
 	font-weight:400;
 	margin:0px;
-	padding-top:10px;
 	transition: color .15s ease-in-out, opacity .15s ease-in-out, max-height .15s ease-in-out;
 	display: flex;
 	flex-wrap: wrap;
@@ -135,6 +134,7 @@ body {
 	text-decoration: none;
 	color: var(--black);
 	transition: color ease-in-out .15s;
+	padding-top:10px;
 }
 
 #nav_links > a:hover {

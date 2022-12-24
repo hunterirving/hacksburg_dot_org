@@ -29,6 +29,9 @@ body {
 	margin-right:15px;
 }
 
+#hacksignia_light {
+}
+
 #hacksignia_dark {
 	display: none;
 }
@@ -176,6 +179,39 @@ body {
 @media only screen and (max-width: 1023px) {
 	#nav_break {
 		display: flex;
+	}
+}
+
+/* tablet ? */
+@media only screen and (max-width: 600px) {
+	#nav_links {
+		font-size:24px;
+	}
+	.marquee {
+		font-size:19px;
+	}
+	#header {
+		padding:20px;
+	}
+}
+
+/* phone ? */
+@media only screen and (max-width: 520px) {
+	#header {
+		padding:15px;
+	}
+	#nav_links {
+		font-size:21px;
+	}
+	#nav_links > a {
+		padding-top: 10px;
+	}
+	.marquee {
+		font-size:18px;
+	}
+	#inner_page_container {
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }
 

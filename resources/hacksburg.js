@@ -18,11 +18,18 @@ function undim_current_page() {
 	current_page.style.cssText = "color: var(--darker_green)";
 }
 
-function togglePostOpened()
+function togglePostOpened(x)
 {
-	const isHidden = nav_links.classList.contains('hidden');
- 
-	if (!isHidden)
+	post_body = x.parentNode.parentNode.querySelector('.post_body');
+	if (post_body.classList.contains('closed')) {
+		x.style.transform = 'rotate(-45deg)';
+		post_body.classList.remove('closed');
+	}
+	else {
+		x.style.transform = "rotate(0deg)";
+		post_body.classList.add('closed'); 
+	}
+	/*if (!isHidden)
 	{
 		plus.style.transform = 'rotate(0deg)';
 		nav_links.style.opacity = "0%";
@@ -37,6 +44,6 @@ function togglePostOpened()
 		nav_links.style.maxHeight = "50px";
 		//nav_links.style.paddingBottom = "50px";
 		nav_links.classList.remove('hidden');
-	}
+	}*/
 }
 

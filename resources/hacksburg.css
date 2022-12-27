@@ -143,6 +143,7 @@ body {
 	color: var(--black);
 	transition: color ease-in-out .15s;
 	padding-top:10px;
+	padding-bottom:30px;
 }
 
 #nav_links > a:hover {
@@ -240,6 +241,7 @@ body {
 	cursor: pointer;
 	transform: rotate(-45deg);
 	margin-left: auto;
+	transition: transform .15s ease-in-out;
 }
 
 @media(any-hover: hover) and (any-pointer: fine) {
@@ -256,7 +258,7 @@ body {
 	height: 20px;
 	position: relative;
 	width: 4px;
-	transition: transform .15s ease-in-out, background .15s ease-in-out;
+	transition: background .15s ease-in-out;
 }
 
 .x:after {
@@ -330,6 +332,37 @@ body {
 	font-size: 16px;
 }
 
+.past_events_marker {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	margin-bottom: 90px;
+}
+
+.event_detail {
+	margin-bottom: 5px;
+}
+
+.past_bubble {
+	padding: 14px;
+	width: fit-content;
+	background-color: var(--darker_green);
+	color: var(--white);
+	border-radius: 500px;
+	align-items: center;
+	font-size: 19px;
+	height: fit-content;
+	display: inline-block;
+}
+
+.past_line {
+	height: 2px;
+	max-width: 100%;
+	background-color: var(--darker_green);
+	flex-grow: 1;
+	margin-left:-10px;
+}
+
 @media only screen and (max-width: 1083px) {
 	#inner_page_container {
 		padding-right: 30px;
@@ -377,17 +410,40 @@ body {
 	}
 }
 
+.slider {
+	overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+	transition-property: all;
+	transition-duration: .5s;
+}
+
+.slider.closed {
+	max-height: 0;
+}
+
 /* Light mode by default, use dark mode when preferred */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--black: #ffffff;
 		--white: #000000;
-		--darker_green: #00cf00;
+		--darker_green: var(--lighter_green);
 	}
 	#hacksignia_light {
 		display: none;
 	}
 	#hacksignia_dark {
 		display: inline-block;
+	}
+	.post_header {
+		background-color: var(--darker_green);
+		color: white;
+		
+	}
+	.post_text {
+		background-color: white;
+		color: black;
+	}
+	.post_text, .post_image {
+		border: none;
 	}
 }

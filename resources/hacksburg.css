@@ -2,6 +2,7 @@
 	--darker_green: #00b300;
 	--lighter_green: #00cf00;
 	--white: #ffffff;
+	--offwhite: #f4f4f4;
 	--black: #000000;
 }
 
@@ -156,39 +157,39 @@ body {
 #bulletin_board {
 	padding-left: 30px;
 	padding-right: 30px;
+	margin-top: 60px;
 }
 
 .post {
 	width: 100%;
-	height: 10px;
-	margin-top: 60px;
+	margin-bottom: 60px;
+	filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.12));  
 }
 
 .post_header {
 	background-color: var(--black);
-	padding: 20px;
-	padding-left: 15px;
+	padding: 17px;
+	padding-left: 16px;
 	display: flex;
 	flex-direction: row;
 }
 
-.post_image {
-	width: 50%;
-	margin:0;
-	padding:0;
-}
-
 .calendar_link {	
-	position: relative;
-	padding: 13px;
+	padding: 10px;
 	width: fit-content;
 	background-color: var(--white);
 	border-radius: 500px;
 	align-items: center;
-	font-size: 17px;
+	font-size: 15px;
 	display: flex;
 	flex-direction: row;
 	cursor: pointer;
+	height: fit-content;
+	transition: background-color .15s ease-in-out;
+}
+
+.calendar_link:hover {
+	background-color: var(--offwhite);
 }
 
 .circled_date {
@@ -211,10 +212,11 @@ body {
 
 .time {
 	font-size: 15px;
+	white-space: nowrap;
 }
 
 .title_and_subtitle {
-	padding-left: 25px;
+	padding-left: 17px;
 	display: flex;
 	flex-direction: column;
 	color: var(--white);
@@ -228,6 +230,105 @@ body {
 .subtitle {
 }
 
+.x_box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height:30px;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	transform: rotate(-45deg);
+	margin-left: auto;
+}
+
+@media(any-hover: hover) and (any-pointer: fine) {
+	.x_box:hover .x {
+		background: var(--lighter_green);
+	}
+	.x_box:hover .x:after {
+		background: var(--lighter_green);
+	}
+}
+
+.x {
+	background: var(--white);
+	height: 20px;
+	position: relative;
+	width: 4px;
+	transition: transform .15s ease-in-out, background .15s ease-in-out;
+}
+
+.x:after {
+	background: var(--white);
+	content: "";
+	height: 4px;
+	left: -8px;
+	position: absolute;
+	top: 8px;
+	width: 20px;
+	transition: transform .15s ease-in-out, background .15s ease-in-out;
+}
+
+.post_body {
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 100px;
+}
+
+.post_image {
+	width: calc(50% + 1px);
+	object-fit: contain;
+	margin:0;
+	padding:0;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	z-index: 1;
+}
+
+.post_text {
+	width: 50%;
+	background-color: var(--white);
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	box-sizing: border-box;
+	padding: 30px;
+	padding-top: 20px;
+	margin-left: -1px;
+	font-size: 18px;
+}
+
+.post_text a {
+	color: var(--darker_green);
+}
+
+.rsvp_button {
+	padding: 14px;
+	width: fit-content;
+	background-color: var(--darker_green);
+	color: var(--white);
+	border-radius: 500px;
+	align-items: center;
+	font-size: 19px;
+	cursor: pointer;
+	height: fit-content;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	transition: background-color .15s ease-in-out;
+}
+
+.rsvp_button:hover {
+	background-color: var(--lighter_green);
+}
+
+.rsvp_by_email {
+	text-align: center;
+	margin-top: 9px;
+	margin-bottom: 4px;
+	font-size: 16px;
+}
 
 @media only screen and (max-width: 1083px) {
 	#inner_page_container {

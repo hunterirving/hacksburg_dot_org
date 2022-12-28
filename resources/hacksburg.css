@@ -363,6 +363,12 @@ body {
 	margin-left:-10px;
 }
 
+/*#bottom_gradient {
+	height: 600px;
+	background: rgb(0,0,0);
+	background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%); 
+}*/
+
 @media only screen and (max-width: 1083px) {
 	#inner_page_container {
 		padding-right: 30px;
@@ -412,7 +418,7 @@ body {
 
 .slider {
 	overflow-y: hidden;
-	max-height: 500px; /* approximate max height */
+	max-height: 1000px; /* approximate max height */
 	transition-property: all;
 	transition-duration: .5s;
 }
@@ -421,7 +427,7 @@ body {
 	max-height: 0;
 }
 
-/* Light mode by default, use dark mode when preferred */
+/* Light mode by default, use dark mode when preferred 
 @media (prefers-color-scheme: dark) {
 	:root {
 		--black: #ffffff;
@@ -446,4 +452,4 @@ body {
 	.post_text, .post_image {
 		border: none;
 	}
-}
+}*/

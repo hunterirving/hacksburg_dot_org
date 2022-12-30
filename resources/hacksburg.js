@@ -20,14 +20,14 @@ function undim_current_page() {
 
 function togglePostOpened(x)
 {
-	post_body = x.parentNode.parentNode.querySelector('.post_body');
-	if (post_body.classList.contains('closed')) {
+	closeable = x.parentNode.parentNode.querySelector('.closeable');
+	if (closeable.classList.contains('closed')) {
 		x.style.transform = 'rotate(-45deg)';
-		post_body.classList.remove('closed');
+		closeable.classList.remove('closed');
 	}
 	else {
 		x.style.transform = "rotate(0deg)";
-		post_body.classList.add('closed'); 
+		closeable.classList.add('closed'); 
 	}
 }
 

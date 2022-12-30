@@ -129,7 +129,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top:2px;
+	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 #nav_break {
@@ -142,8 +143,7 @@ body {
 	text-decoration: none;
 	color: var(--black);
 	transition: color ease-in-out .15s;
-	padding-top:10px;
-	padding-bottom:30px;
+	margin-bottom: 20px;
 }
 
 #nav_links > a:hover {
@@ -165,6 +165,7 @@ body {
 	width: 100%;
 	margin-bottom: 60px;
 	filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.12));
+	margin-bottom: 100px;
 }
 
 .post_header {
@@ -274,7 +275,6 @@ body {
 
 .post_body {
 	display: flex;
-	margin-bottom: 100px;
 }
 
 .post_image {
@@ -327,7 +327,7 @@ body {
 	display: flex;
 	align-items: center;
 	flex-shrink: 0;
-	margin-bottom: 90px;
+	margin-bottom: 100px;
 }
 
 .event_detail {
@@ -362,19 +362,46 @@ body {
 
 @media only screen and (max-width: 1083px) {
 	#inner_page_container {
-		padding-right: 30px;
 		padding-left: 30px;
+		padding-right: 30px;
+	}
+	#bulletin_board {
+		padding-left: 0px;
+		padding-right: 0px;
+		margin-top: 50px;
 	}
 }
 
 @media only screen and (max-width: 1023px) {
+	#nav_links {
+	}
 	#nav_break {
 		display: flex;
+	}
+	.post_body {
+		flex-direction: column;
+	}
+	.post_image {
+		width: 100%;
+		max-height: 500px;
+		object-fit: cover;
+		display: block;
+	}
+	.post_text {
+		width: 100%;
+		background-color: var(--white);
+		box-sizing: border-box;
+		padding: 30px;
+		padding-top: 20px;
+		font-size: 18px;
+	}
+	#bulletin_board {
+		margin-top: 30px;
 	}
 }
 
 /* tablet ? */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 	#nav_links {
 		font-size:24px;
 	}
@@ -387,7 +414,7 @@ body {
 }
 
 /* phone ? */
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 580px) {
 	#header {
 		padding:15px;
 	}
@@ -395,8 +422,6 @@ body {
 		font-size:21px;
 	}
 	#nav_links > a {
-		padding-top: 10px;
-		padding-bottom: 5px;
 	}
 	.marquee {
 		font-size:18px;
@@ -404,6 +429,11 @@ body {
 	#inner_page_container {
 		padding-right: 15px;
 		padding-left: 15px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	#inner_page_container {
 	}
 }
 

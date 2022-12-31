@@ -1,1 +1,1 @@
-.*.sw*
+*/.*.sw* */*.swp *.DS_Store *.swp

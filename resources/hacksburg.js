@@ -1,4 +1,9 @@
+let images = ['resources/images/seedstarting_cropped.jpg', 'resources/images/casting_cropped.jpg', 'resources/images/deadpool_cropped.jpg'];
+let index = 0;
+let imgElement = null;
+
 window.addEventListener('DOMContentLoaded', (event) => {
+	/* dim/undim current page in nav_links while hovering over other nav elements */
 	current_page = document.getElementById('current_page');
 	nav_link_container = document.getElementById('nav_links')
 	nav_links = nav_link_container.children;
@@ -8,6 +13,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			nav_links[i].onmouseover = dim_current_page;
 		}
 	}
+
+	/*update pinned post carousel every 4 seconds*/
+	imgElement = document.querySelector(".carousel");
+	setInterval(updateCarousel, 5000);
 });
 
 function dim_current_page() {
@@ -31,3 +40,7 @@ function togglePostOpened(x)
 	}
 }
 
+function updateCarousel() {
+	index > 1 ? index = 0 : index++;
+	imgElement.src = images[index];
+}

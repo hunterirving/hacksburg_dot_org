@@ -20,6 +20,7 @@ body {
 
 #header {
 	padding: 30px;
+	padding-bottom: 35px;
 	display: flex;
 	width: fit-content;
 	overflow: hidden;
@@ -83,7 +84,7 @@ body {
 	padding-bottom: 120px;
 }
 
-#marquee_container {
+/*#marquee_container {
 	overflow: hidden;
 	white-space: nowrap;
 	background-color: var(--black);
@@ -93,7 +94,8 @@ body {
 }
 
 .marquee {
-	animation: marquee 20s linear infinite;
+	animation: marquee 15s linear;
+	animation-iteration-count: 1;
 	display: inline-block;
 	padding-left:1024px;
 	font-size:20px;
@@ -107,7 +109,7 @@ body {
 
 #marquee_container:hover > .marquee {
 	animation-play-state: paused;
-}
+}*/
 
 @keyframes marquee {
   from {
@@ -129,7 +131,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin-top: 20px;
+	margin-top: 13px;
 	margin-bottom: 10px;
 }
 
@@ -155,6 +157,12 @@ body {
 	cursor: default;
 }
 
+.rule {
+	background-color: black;
+	height: 2px;
+	width: 100%;
+}
+
 #bulletin_board {
 	padding-left: 30px;
 	padding-right: 30px;
@@ -164,20 +172,21 @@ body {
 .post {
 	width: 100%;
 	margin-bottom: 60px;
-	filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.12));
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.12);
 	margin-bottom: 100px;
 }
 
 .post_header {
 	background-color: var(--black);
-	padding: 17px;
-	padding-left: 16px;
+	padding: 16px;
 	display: flex;
 	flex-direction: row;
 }
 
 .calendar_link {	
 	padding: 10px;
+	padding-right: 16px;
+	margin-right: 16px;
 	width: fit-content;
 	background-color: var(--white);
 	border-radius: 500px;
@@ -218,7 +227,6 @@ body {
 }
 
 .title_and_subtitle {
-	padding-left: 17px;
 	display: flex;
 	flex-direction: column;
 	color: var(--white);
@@ -296,7 +304,18 @@ body {
 	color: var(--darker_green);
 }
 
-.rsvp_button {
+.post.pinned .title_and_subtitle {
+	flex-direction: row;
+}
+
+.pushpin {
+	height: 20px;
+	margin-left: 12px;
+	margin-right: 7px;
+	padding-top: 8px;
+}
+
+.green_button {
 	padding: 14px;
 	width: fit-content;
 	background-color: var(--darker_green);
@@ -312,7 +331,7 @@ body {
 	transition: background-color .15s ease-in-out;
 }
 
-.rsvp_button:hover {
+.green_button:hover {
 	background-color: var(--lighter_green);
 }
 

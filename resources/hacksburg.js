@@ -1,4 +1,4 @@
-let images = ['resources/images/seedstarting_cropped.jpg', 'resources/images/casting_cropped.jpg', 'resources/images/deadpool_cropped.jpg'];
+let images = ['https://hunterirving.com/hacksburg_dot_org/resources/images/seedstarting_cropped.jpg', 'https://hunterirving.com/hacksburg_dot_org/resources/images/casting_cropped.jpg', 'https://hunterirving.com/hacksburg_dot_org/resources/images/deadpool_cropped.jpg'];
 let index = 0;
 let imgElement = null;
 

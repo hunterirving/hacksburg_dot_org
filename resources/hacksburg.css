@@ -262,7 +262,6 @@ body {
 	padding: 2rem;
 	padding-top: 1.6rem;
 	font-size: 1.15rem;
-
 	padding-bottom: 2.8rem;
 }
 
@@ -324,7 +323,13 @@ body {
 
 .green_button:hover {
 	background-color: var(--lighter_green);
-	filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.2));	
+	filter: drop-shadow(0 0 0.1rem rgba(0, 0, 0, 0.2));
+}
+
+.green_button.disabled {
+	color: var(--lighter_green);
+	background-color: var(--white);
+	border: 1px solid var(--lighter_green);
 }
 
 .below_button_text {

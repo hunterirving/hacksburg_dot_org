@@ -6,8 +6,8 @@
 			Hacksburg.org
 		</title>
 		<link rel="icon" href="https://hunterirving.com/hacksburg_dot_org/resources/hacksignia_light.svg" type="image/svg+xml">
-		<link rel="stylesheet" type="text/css" href="https://hunterirving.com/hacksburg_dot_org/resources/hacksburg.css">
-		<script type="text/javascript" src="https://hunterirving.com/hacksburg_dot_org/resources/hacksburg.js"></script>
+		<link rel="stylesheet" type="text/css" href="resources/hacksburg.css">
+		<script type="text/javascript" src="resources/hacksburg.js"></script>
 	</head>
 	<body>
 		<div id="page_container" class="center">
@@ -20,9 +20,6 @@
 				</div>
 			</div>
 			<div class="rule"></div>
-			<!--<div id="marquee_container" class="noselect">
-			<div class="marquee">Hacksburg is Blacksburg's first makerspace.&nbsp&nbspOur weekly meetings are open to the public every Tuesday at 7:30pm (online and in person).</div>
-			</div>!-->
 			<div id="inner_page_container">
 				<div id="nav_links">
 					<a id="current_page">home</a>
@@ -40,7 +37,7 @@
 					<div class="post pinned">
 						<div class="post_header">
 							<div class="title_and_subtitle">
-								<div class="title">Hacksburg is Blacksburg's First Makerspace</div>
+								<div class="title">Hacksburg is Blacksburg's Makerspace</div>
 								<img class="pushpin" src="https://hunterirving.com/hacksburg_dot_org/resources/pushpin.svg">
 							</div>
 							<div class="x_box" onClick="togglePostOpened(this)">
@@ -52,9 +49,15 @@
 								<img class="post_image carousel" src="https://hunterirving.com/hacksburg_dot_org/resources/images/seedstarting_cropped.jpg">
 								<div class="post_text">
 									Hacksburg is a community workshop located in Blacksburg, Virginia. Through instructional classes and weekly meetings, we aim to help members of the Blacksburg community complete projects that would otherwise be out of reach.<br><br>
-Hacksburg's woodshop, metalshop, laser cutter, 3D printers, electronics bench, and CNC mill are available for use by Hacksburg <a href="hacksburg.org/join">members</a> twenty-four hours a day, seven days a week.<br><br>
-Hacksburg's weekly meeting is open to the public every Tuesday at 7:30pm (<a href="">online</a> and <a href="">in person</a>).
-<div class="green_button learn_more">Learn More</div>
+									Hacksburg's woodshop, metalshop, laser cutter, 3D printers, electronics bench, and CNC mill are available for use by Hacksburg <a href="hacksburg.org/join">members</a> twenty-four hours a day, seven days a week.<br><br>
+									Hacksburg's weekly meeting is open to the public every Tuesday at 7:30pm (online and in person).
+									<div id="pinned_post_buttons">
+										<div class="green_button" id="learn_more">Learn More</div>
+										<div id="join_meeting_container">
+											<div class="green_button" id="join_meeting" style="background-color: white; border: 1px solid var(--lighter_green); color: var(--lighter_green)">Join Meeting</div>
+											<div class="below_button_text" style="color: black;">no meeting today</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -80,13 +83,13 @@ Hacksburg's weekly meeting is open to the public every Tuesday at 7:30pm (<a hre
 							<div class="post_body">
 								<img class="post_image" src="https://hunterirving.com/hacksburg_dot_org/resources/images/ciderpress2.jpg">
 								<div class="post_text"> On Sunday, October 23rd, Hacksburg will host host its 8th Annual Cidermaking Event. Bring your own apples and containers and join us to make your own fresh squeezed apple cider. <a href="https://wiki.hacksburg.org/wiki/Cider_Making">Click here</a> for more information about cidermaking and what to bring. Cidermaking is free and open to the public! Free tours of the new Hacksburg community workshop will also be offered.<br><br>
-									<b>Time</b>: January 29th from 1:00 to 4:00pm<br>
+									<b>Time</b>: Sunday, January 29th from 1:00 to 4:00pm<br>
 									<b>Location</b>: In person at Hacksburg; <a href="https://www.google.com/maps/dir/?api=1&destination=Hacksburg+Blacksburg,+VA">1872 Pratt Drive Suite 1620</a>.<br>
 									Enter through the covered double doors at the back of the building.<br>
 									<b>URL</b>: This event will only be held in person.<br>
 									<b>Cost</b>: Free!
 									<div class="green_button">RSVP on Meetup</div>
-									<div class="rsvp_by_email">
+									<div class="below_button_text">
 										or <a href="mailto:contact@hacksburg.org">RSVP by Email</a>
 									</div>
 								</div>
@@ -118,13 +121,13 @@ Hacksburg's weekly meeting is open to the public every Tuesday at 7:30pm (<a hre
 
 	This class is for attendees age 16 and up. Minors will need to have parent/guardian supervision for the <b>entire duration</b> of the class, and parent/guardian must approve all shop tool use.<br><br>
 
-									<b>Time</b>: January 22nd from 1:00 to 4:00pm<br>
+									<b>Time</b>: Sunday, January 22nd from 1:00 to 4:00pm<br>
 									<b>Location</b>: Online and in person at Hacksburg; <a href="https://www.google.com/maps/dir/?api=1&destination=Hacksburg+Blacksburg,+VA">1872 Pratt Drive Suite 1620</a>.<br>
 									Enter through the covered double doors at the back of the building.<br>
 									<b>URL</b>: This event will only be held in person.<br>
 									<b>Cost</b>: $30 for Hacksburg members; $35 for non-members. Online payments accepted at <a href="https://paypal.me/hacksburg">paypal.me/hacksburg</a>.
 									<div class="green_button">RSVP on Meetup</div>
-									<div class="rsvp_by_email">
+									<div class="below_button_text">
 										or <a href="mailto:contact@hacksburg.org">RSVP by Email</a>
 									</div>
 								</div>
@@ -159,13 +162,13 @@ Hacksburg's weekly meeting is open to the public every Tuesday at 7:30pm (<a hre
 								<div class="post_text">
 									Learn the basics of HTML and CSS to build a simple personal website. Bring a laptop loaded with your favorite text editor (we recommend <a href="https://code.visualstudio.com/">VS Code</a>), and be sure to sign up for a GitHub account before class (we'll host our sites using <a href="https://pages.github.com/">GitHub pages</a>). Looking for some inspiration? Check out <a href="https://neocities.org/browse">NeoCities</a>. <br><br>
 
-									<b>Time</b>: December 18th from 1:00 to 4:00pm<br>
+									<b>Time</b>: Sunday, December 18th from 1:00 to 4:00pm<br>
 									<b>Location</b>: Online and in person at Hacksburg; <a href="https://www.google.com/maps/dir/?api=1&destination=Hacksburg+Blacksburg,+VA">1872 Pratt Drive Suite 1620</a>.<br>
 									Enter through the covered double doors at the back of the building.<br>
 									<b>URL</b>: <a href="https://meet.hacksburg.org/class">meet.hacksburg.org/class</a><br>
 									<b>Cost</b>: Free for Hacksburg members; $5 for non-members. Online payments accepted at <a href="https://paypal.me/hacksburg">paypal.me/hacksburg</a>.
 									<div class="green_button">RSVP on Meetup</div>
-									<div class="rsvp_by_email">
+									<div class="below_button_text">
 										or <a href="mailto:contact@hacksburg.org">RSVP by Email</a>
 									</div>
 								</div>
@@ -195,13 +198,13 @@ Hacksburg's weekly meeting is open to the public every Tuesday at 7:30pm (<a hre
 								<div class="post_text">
 								Make your own edge-lit acrylic sign using Hacksburg's laser cutter. Basic laser safety, design guidelines, and examples will be presented, and attendees will receive a small sheet of acrylic and an LED base as part of the class registration fee.<br><br>
 
-									<b>Time</b>: January 15th from 1:00 to 4:00pm<br>
+									<b>Time</b>: Sunday, January 15th from 1:00 to 4:00pm<br>
 									<b>Location</b>: Online and in person at Hacksburg; <a href="https://www.google.com/maps/dir/?api=1&destination=Hacksburg+Blacksburg,+VA">1872 Pratt Drive Suite 1620</a>.<br>
 									Enter through the covered double doors at the back of the building.<br>
 									<b>URL</b>: <a href="https://meet.hacksburg.org/class">meet.hacksburg.org/class</a><br>
 									<b>Cost</b>: $10 for Hacksburg members; $15 for non-members. Online payments accepted at <a href="https://paypal.me/hacksburg">paypal.me/hacksburg</a>.
 									<div class="green_button">RSVP on Meetup</div>
-									<div class="rsvp_by_email">
+									<div class="below_button_text">
 										or <a href="mailto:contact@hacksburg.org">RSVP by Email</a>
 									</div>
 								</div>

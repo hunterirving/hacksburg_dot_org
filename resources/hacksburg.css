@@ -262,6 +262,8 @@ body {
 	padding: 2rem;
 	padding-top: 1.6rem;
 	font-size: 1.15rem;
+
+	padding-bottom: 2.8rem;
 }
 
 .post_text a {
@@ -275,6 +277,27 @@ body {
 	width: 100%;
 }
 
+#pinned_post_buttons {
+	margin: 1rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: .5rem;
+	margin-bottom: 0;
+}
+
+#learn_more {
+	margin-left: 0;
+	margin-right:0;
+}
+
+#join_meeting_container {
+	margin-left: 1.75rem;
+}
+
+#join_meeting {
+}
+
 .pushpin {
 	height: 1.2rem;
 	margin-left: auto;
@@ -284,7 +307,7 @@ body {
 }
 
 .green_button {
-	padding: .9rem;
+	padding: 1rem;
 	width: fit-content;
 	background-color: var(--darker_green);
 	color: var(--white);
@@ -295,18 +318,18 @@ body {
 	height: fit-content;
 	display: block;
 	margin: 0 auto;
-	margin-top: 2rem;
-	transition: background-color .15s ease-in-out;
+	margin-top: 2.5rem;
+	transition: .15s ease-in-out;
 }
 
 .green_button:hover {
 	background-color: var(--lighter_green);
+	filter: drop-shadow(0 0 0.2rem rgba(0, 0, 0, 0.2));	
 }
 
-.rsvp_by_email {
+.below_button_text {
 	text-align: center;
 	margin-top: .5rem;
-	margin-bottom: .8rem;
 	font-size: 1rem;
 }
 
@@ -335,10 +358,6 @@ body {
 	background-color: var(--darker_green);
 	flex-grow: 1;
 	margin-left:-10px;
-}
-
-.learn_more {
-	margin-bottom: 1rem;
 }
 
 @media only screen and (max-width: 66rem){

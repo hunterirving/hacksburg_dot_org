@@ -3,6 +3,8 @@ let index = 0;
 let imgElement = null;
 
 window.addEventListener('DOMContentLoaded', (event) => {
+	/* decorate join meeting button on load, then every minute thereafter */
+	decorate_join_meeting_button();
 	/* dim/undim current page in nav_links while hovering over other nav elements */
 	current_page = document.getElementById('current_page');
 	nav_link_container = document.getElementById('nav_links')
@@ -13,11 +15,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			nav_links[i].onmouseover = dim_current_page;
 		}
 	}
-
-	/*update pinned post carousel every 4 seconds*/
+	/* update pinned post carousel every 4 seconds */
+	/* TODO change this */
 	imgElement = document.querySelector(".carousel");
 	setInterval(updateCarousel, 5000);
 });
+
+function decorate_join_meeting_button() {
+}
 
 function dim_current_page() {
 	current_page.style.cssText = "color: var(--black)";

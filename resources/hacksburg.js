@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	/* update pinned post carousel every 4 seconds */
 	/* TODO change this */
 	imgElement = document.querySelector(".carousel");
-	setInterval(updateCarousel, 5000);
+	setInterval(updateCarousel, 6000);
 });
 
 function decorate_join_meeting_button() {

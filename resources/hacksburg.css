@@ -301,7 +301,7 @@ body {
 	padding: 2rem;
 	padding-top: 1.6rem;
 	font-size: 1.15rem;
-	padding-bottom: 2.2rem;
+	padding-bottom: 2rem;
 }
 
 .post_text a {
@@ -386,24 +386,18 @@ body {
 	margin-bottom: 6rem;
 }
 
-.past_bubble {
-	padding: .8rem;
-	width: fit-content;
-	background-color: var(--darker_green);
-	color: var(--white);
-	border-radius: 50rem;
-	align-items: center;
-	font-size: 1.2rem;
+.past_text {
+	font-family: "Electrolize";
 	height: fit-content;
-	display: inline-block;
+	font-size: 1.6rem;
 }
 
 .past_line {
 	height: .1rem;
 	max-width: 100%;
-	background-color: var(--darker_green);
+	background-color: var(--black);
 	flex-grow: 1;
-	margin-left:-10px;
+	margin-left: 10px;
 }
 
 @media only screen and (max-width: 66rem){

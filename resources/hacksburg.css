@@ -125,6 +125,11 @@ body {
 	width: 100%;
 }
 
+.post_text_rule {
+	margin-top:6px;
+	margin-bottom:20px;
+}
+
 #bulletin_board {
 	margin-top: 3.4rem;
 }
@@ -309,6 +314,10 @@ body {
 
 .post_text a {
 	color: var(--darker_green);
+}
+
+#donation_jar {
+	width: 35%;
 }
 
 .post.pinned .title_and_subtitle {

@@ -126,8 +126,13 @@ body {
 }
 
 .post_text_rule {
-	margin-top:6px;
-	margin-bottom:20px;
+	margin-top:.6rem;
+	margin-bottom:1.5rem;
+}
+
+.post_text_rule_mini {
+	margin-top: .3rem;
+	margin-bottom: 1rem;
 }
 
 #bulletin_board {
@@ -316,8 +321,50 @@ body {
 	color: var(--darker_green);
 }
 
+.post_text p {
+	padding: 0;
+	margin: 0;
+}
+
+.full_width {
+	width: 100%;
+}
+
+#donation_jar_container {
+	display: flex;
+	justify-content: center;
+}
+
 #donation_jar {
-	width: 35%;
+	max-width: 17rem;
+	margin:0 auto;
+	margin-bottom: 1.5rem;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.donation_methods {
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+.donation_method {
+	margin-bottom: 3.5rem;
+	margin-top: 3rem;
+	margin-left: 2.5rem;
+}
+
+.post_section {
+	margin-bottom: 3rem;
+}
+
+.post_section_header {
+	font-size: 1.5rem;
+}
+
+.post_subsection_header {
+	font-size: 1.4rem;
+
 }
 
 .post.pinned .title_and_subtitle {
@@ -332,7 +379,7 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-top: .25rem;
+	margin-top: 2.75rem;
 	margin-bottom: 0;
 }
 
@@ -369,8 +416,11 @@ body {
 	height: fit-content;
 	display: block;
 	margin: 0 auto;
-	margin-top: 2.5rem;
 	transition: .15s ease-in-out;
+}
+
+.rsvp_button {
+	margin-top: 2rem;
 }
 
 .green_button:hover {
@@ -507,7 +557,7 @@ body {
 
 .closeable {
 	overflow-y: hidden;
-	max-height: 100rem;
+	max-height: 125rem;
 	transition-property: all;
 	transition-duration: .5s;
 }

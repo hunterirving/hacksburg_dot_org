@@ -62,7 +62,7 @@
 									<div class="post_section">
 										<span class="post_section_header">Membership Rates</span>
 										<div class="post_text_rule"></div>
-										You can use the buttons below to set up a PayPal subscription for membership. A subscription will debit the amount shown from your PayPal account every membership term until you unsubscribe (using the Unsubscribe button below). You can unsubscribe at any time, at which point your membership will remain active until the end of your current membership term. If any issues arise, please reach out to Hacksburg's board of directors at <a href="mailto:board@hacksburg.org">board@hacksburg.org</a>.<br><br>
+										You can use the buttons below to set up a PayPal subscription for membership. A subscription will charge the amount shown to your PayPal account every membership term until you unsubscribe (using the Unsubscribe button below). You can unsubscribe at any time, at which point your membership will remain active until the end of your current membership term. For assistance, contact Hacksburg's board of directors at <a href="mailto:board@hacksburg.org">board@hacksburg.org</a>.<br><br>
 
 										<span id="student_membership_hint_text">Note: discounted <a href="#student_membership">student pricing</a> is available to anyone with an active student ID.</span>
 									</div>
@@ -74,22 +74,38 @@
 											<div class="membership_option">
 												<div class="membership_term">1 month</div>
 												<div class="membership_price">$40</div>
-												<div class="button">Subscribe</div>
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="LXVDTWVFDKSB6">
+													<input class="button" type="submit" value="Subscribe" border="0">
+												</form>
 											</div>
 											<div class="membership_option">
 												<div class="membership_term">3 months</div>
 												<div class="membership_price">$108</div>
-												<div class="button">Subscribe</div>
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="MQCYZ5FSAY38Q">
+													<input class="button" type="submit" value="Subscribe" border="0">
+												</form>
 											</div>
 											<div class="membership_option">
 												<div class="membership_term">6 months</div>
 												<div class="membership_price">$204</div>
-												<div class="button">Subscribe</div>
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="BHCWYWEJJUPVA">
+													<input class="button" type="submit" value="Subscribe" border="0">
+												</form>
 											</div>
 											<div class="membership_option">
 												<div class="membership_term">12 months</div>
 												<div class="membership_price">$384</div>
-												<div class="button">Subscribe</div>
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="WSJJKPE83WBE8">
+													<input class="button" type="submit" value="Subscribe" border="0">
+												</form>
 											</div>
 										</div>
 									</div>
@@ -101,22 +117,38 @@
 											<div class="membership_option">
 												<div class="membership_term">1 month</div>
 												<div class="membership_price">$32</div>
-												<div class="button">Subscribe</div>
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="4VL5DKCUTYRDQ">
+													<input class="button" type="submit" value="Subscribe" border="0">
+												</form>
 											</div>
 											<div class="membership_option">
 												<div class="membership_term">3 months</div>
 												<div class="membership_price">$84</div>
-												<div class="button">Subscribe</div>
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="DMSVJC64KZ438">
+													<input class="button" type="submit" value="Subscribe" border="0">
+												</form>
 											</div>
 											<div class="membership_option">
 												<div class="membership_term">6 months</div>
 												<div class="membership_price">$156</div>
-												<div class="button">Subscribe</div>
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="KEB8HMPFDBWR8">
+													<input class="button" type="submit" value="Subscribe" border="0">
+												</form>
 											</div>
 											<div class="membership_option">
 												<div class="membership_term">12 months</div>
 												<div class="membership_price">$288</div>
-												<div class="button">Subscribe</div>
+												<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+													<input type="hidden" name="cmd" value="_s-xclick">
+													<input type="hidden" name="hosted_button_id" value="NMPL9XUWAMKYC">
+													<input class="button" type="submit" value="Subscribe" border="0">
+												</form>
 											</div>
 										</div>
 									</div>
@@ -150,7 +182,9 @@
 										<span class="post_subsection_header">Unsubscribe</span>
 										<div class="post_text_rule_mini"></div>
 										To cancel an active subsciption, use the button below. Your membership will remain active until the end of your current membership term.</div>
-										<div class="button unsubscribe">Unsubscribe</div>
+										<a class="button_link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&alias=3G6D8WWSMSNSN">
+											<div class="button unsubscribe">Unsubscribe</div>
+										</a>
 									</div>
 
 								</div>

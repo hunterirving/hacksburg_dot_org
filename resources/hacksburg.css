@@ -429,6 +429,11 @@ body {
 	display: block;
 	margin: 0 auto;
 	transition: .15s ease-in-out;
+	text-decoration: none;
+}
+
+.button_link {
+	text-decoration: none;
 }
 
 .rsvp_button {

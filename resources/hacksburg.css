@@ -1,6 +1,7 @@
 :root {
 	--darker_green: #00b300;
 	--lighter_green: #00cf00;
+	--lightest_green: #7ac178;
 	--tomato: tomato;
 	--tomato_soup: #ff5537;
 	--white: #ffffff;
@@ -10,6 +11,11 @@
 
 html{
 	scroll-behavior: smooth;
+}
+
+::selection {
+	background: var(--black);
+	color: white;
 }
 
 @font-face {

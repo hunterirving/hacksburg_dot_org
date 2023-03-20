@@ -1,7 +1,6 @@
 :root {
 	--darker_green: #00b300;
 	--lighter_green: #00cf00;
-	--lightest_green: #7ac178;
 	--tomato: tomato;
 	--tomato_soup: #ff5537;
 	--white: #ffffff;
@@ -14,7 +13,7 @@ html{
 }
 
 ::selection {
-	background: var(--black);
+	background: var(--darker_green);
 	color: white;
 }
 
@@ -82,7 +81,7 @@ body {
 }
 
 .noselect {
-	user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+	user-select: none;
 }
 
 .center {
@@ -436,6 +435,7 @@ a {
 	margin: 0 auto;
 	transition: .15s ease-in-out;
 	text-decoration: none;
+	user-select: none;
 }
 
 .button .green {

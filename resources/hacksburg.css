@@ -462,7 +462,7 @@ a {
 	color: var(--white);
 	background-color: var(--tomato);
 	border: 1px solid var(--tomato);
-	margin-bottom:2rem;
+	margin-bottom:3rem;
 }
 
 .button.unsubscribe:hover {

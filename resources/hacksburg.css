@@ -213,7 +213,7 @@ body {
 }
 
 .x_box {
-	display: flex;
+	display: none; /*display: flex; when js is enabled*/
 	justify-content: center;
 	align-items: center;
 	line-height:30px;
@@ -302,6 +302,7 @@ body {
 	height: 3rem;
 	position: absolute;
 	bottom: 0rem;
+	display: none;
 }
 
 .carousel_nav_inner {

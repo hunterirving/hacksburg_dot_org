@@ -278,6 +278,7 @@ body {
 	width: 50%;
 	object-fit: cover;
 	display: block;
+	user-select: none;
 }
 
 .post_map {
@@ -418,6 +419,7 @@ a {
 	margin-right: .3rem;
 	padding-top: .45rem;
 	padding-left: 1rem;
+	user-select: none;
 }
 
 .button {
@@ -433,9 +435,10 @@ a {
 	height: fit-content;
 	display: block;
 	margin: 0 auto;
-	transition: .15s ease-in-out;
+	transition: color .15s ease-in-out, border .15s ease-in-out, background-color .15s ease-in-out, filter .15s ease-in-out;
 	text-decoration: none;
 	user-select: none;
+	text-align: center;
 }
 
 .button .green {
@@ -474,6 +477,7 @@ a {
 	text-align: center;
 	margin-top: .5rem;
 	font-size: 1rem;
+	user-select: none;
 }
 
 .past_events_marker {
@@ -633,13 +637,32 @@ a {
 	}
 	.carousel_nav_inner {
 	}
+	#pinned_post_buttons {
+		flex-direction: column;
+	}
+	#learn_more {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1.5rem;
+	}
+	#join_meeting_container {
+		margin-left: 0;
+	}
 }
 
 .closeable {
 	overflow-y: hidden;
-	max-height: 125rem;
+	max-height: 150rem;
 	transition-property: all;
 	transition-duration: .5s;
+}
+
+.closeable_extra_tall {
+	max-height: 250rem;
+}
+
+.closeable_extra_extra_tall {
+	max-height: 350rem;
 }
 
 .closeable.closed {

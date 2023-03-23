@@ -13,8 +13,7 @@ html{
 }
 
 ::selection {
-	background: var(--darker_green);
-	color: white;
+	color: var(--darker_green);;
 }
 
 @font-face {

@@ -1,0 +1,29 @@
+{
+	"posts": [
+		{
+			"title": "Cidermaking Weekend",
+			"subtitle": "Use Hacksburg's 10 ton hydraulic press to make fresh apple cider",
+			"description": "Bring your own apples and containers and join us to make your own fresh squeezed apple cider...",
+			"date": "1/22/23",
+			"start_time": "11:00am",
+			"end_time": "1:00pm",
+			"offered_in_person": "true",
+			"offered_online": "false",
+			"cost": 10,
+			"image": "ciderpress.jpg",
+			"meetup_link": "meetup.com/asdfgh"
+		},
+		{
+			"title": "Cidermaking Weekend, but Again",
+			"subtitle": "Use Hacksburg's 10 ton hydraulic press to make fresh apple cider",
+			"description": "Bring your own apples and containers and join us to make your own fresh squeezed apple cider...",
+			"date": "1/22/23",
+			"start_time": "11:00am",
+			"end_time": "1:00pm",
+			"offered_in_person": "true",
+			"offered_online": "false",
+			"cost": 10,
+			"image": "ciderpress.jpg",
+			"meetup_link": "meetup.com/asdfgh"
+		},
+}

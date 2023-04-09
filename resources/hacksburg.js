@@ -1,11 +1,7 @@
-let images = ['../hacksburg_dot_org/resources/images/seedstarting_cropped.jpg', '../hacksburg_dot_org/resources/images/casting_cropped.jpg', '../hacksburg_dot_org/resources/images/deadpool_cropped.jpg'];
-let index = 0;
-let imgElement = null;
-
 window.addEventListener('DOMContentLoaded', (event) => {
-	/* decorate join meeting button on load, then every minute thereafter */
-	decorate_join_meeting_button();
-	/* dim/undim current page in nav_links while hovering over other nav elements */
+	//if js is enabled, enable x buttons on cards
+	Array.from(document.getElementsByClassName("x_box")).forEach(x => x.style.display = "flex");
+	// dim/undim current page in nav_links while hovering over other nav elements
 	current_page = document.getElementById('current_page');
 	nav_link_container = document.getElementById('nav_links')
 	nav_links = nav_link_container.children;
@@ -15,14 +11,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			nav_links[i].onmouseover = dim_current_page;
 		}
 	}
-	/* update pinned post carousel every 4 seconds */
-	/* TODO change this */
-	/*imgElement = document.querySelector(".carousel");
-	setInterval(updateCarousel, 6000);*/
 });
-
-function decorate_join_meeting_button() {
-}
 
 function dim_current_page() {
 	current_page.style.cssText = "color: var(--black)";
@@ -45,7 +34,3 @@ function togglePostOpened(x)
 	}
 }
 
-function updateCarousel() {
-	index > 1 ? index = 0 : index++;
-	imgElement.src = images[index];
-}

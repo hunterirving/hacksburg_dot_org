@@ -71,7 +71,7 @@ def json_to_html():
 		html += '\t\t\t\t\t\t<div class="closeable">\n'
 		html += '\t\t\t\t\t\t\t<div class="post_body">\n'
 		if post["image"]:
-			html += f'\t\t\t\t\t\t\t\t<img class="post_image" src="../hacksburg_dot_org/resources/images/{post["image"]}">\n'
+			html += f'\t\t\t\t\t\t\t\t<img class="post_image" src="../hacksburg_dot_org/resources/images/{post["image"]}" loading="lazy">\n'
 			html += f'\t\t\t\t\t\t\t\t<div class="post_text">{post["description"]}<br><br>\n'
 		else:
 			html += f'\t\t\t\t\t\t\t\t<div class="post_text" style="width: 100%">{post["description"]}<br><br>\n'
@@ -92,7 +92,7 @@ def json_to_html():
 			location_str = 'Online only.'
 			
 		if location_str:
-			html += f'\t\t\t\t\t\t\t\t\t<b>Location</b>: {location_str}<br>\n'
+			html += f'\t\t\t\t\t\t\t\t\t<b>Place</b>: {location_str}<br>\n'
 		
 		if post["offered_online"]:
 			html += '\t\t\t\t\t\t\t\t\t<b>URL</b>: '

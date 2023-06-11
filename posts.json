@@ -1,13 +1,28 @@
 {
 	"posts": [
 		{
+			"title": "Leatherworking Basics",
+			"subtitle": "Learn how to make long-lasting leather goods",
+			"description": "Many things (shoes, belts, bags, clothing, etc), now generally made of plastic, used to be made of leather, and were much more durable and long lasting. Today most leather hides are discarded and completely wasted! But you can still make many useful things from leather. This class will cover selecting leather, project planning, cutting, sewing, molding, decoration and finishing. Attendees can make a cell phone holster or/and a decorative drink coaster, as time permits. Ages 16+.",
+			"date": "2023-06-25",
+			"start_time": "1:00pm",
+			"end_time": "4:00pm",
+			"offsite_location": null,
+			"offered_online": false,
+			"offered_in_person": true,
+			"member_price": 5,
+			"non_member_price": 5,
+			"image": "leatherworking.jpg",
+			"meetup_link": "https://www.meetup.com/hacksburgva/events/294089600/"
+		},
+		{
 			"title": "Hacksburg Open House",
 			"subtitle": "Tour our Community Workshop",
 			"description": "Hacksburg is a non-profit Makerspace located in Blacksburg, VA. Started in 2014, we're a community workshop focused on helping creatives and entrepreneurs in the New River Valley complete projects that would otherwise be out of reach. Whether you need equipment, mentorship, or just a place to work, Hacksburg is an accessible, collaborative, and affordable resource where you can build anything from rockets to robots to rocking chairs. Hacksburg members must be 18+, but all ages are welcome at this open house. Attendees under 18 must be accompanied by a parent/guardian for the full duration of their visit.",
 			"date": "2023-06-18",
 			"start_time": "1:00pm",
 			"end_time": "4:00pm",
-			"offsite_location": "",
+			"offsite_location": null,
 			"offered_online": false,
 			"offered_in_person": true,
 			"member_price": 0,

@@ -3,15 +3,16 @@
 		{
 			"title": "Hacksburg Open House",
 			"subtitle": "Tour our Community Workshop",
-			"description": "Hacksburg is a non-profit Makerspace located in Blacksburg, VA. Started in 2014, we're a community workshop focused on enabling creatives and entrepreneurs in the New River Valley to complete projects that would otherwise be out of reach. Whether you need equipment, mentorship, or just a place to work, Hacksburg is meant to be an accessible, collaborative, and affordable resource for building anything from rockets to robots to rocking chairs.<br>Hacksburg members must be 18+, but all ages are welcome at this open house. Attendees under 18 must be accompanied by a parent/guardian for the entire duration of their visit.",
+			"description": "Hacksburg is a non-profit Makerspace located in Blacksburg, VA. Started in 2014, we're a community workshop focused on helping creatives and entrepreneurs in the New River Valley complete projects that would otherwise be out of reach. Whether you need equipment, mentorship, or just a place to work, Hacksburg is an accessible, collaborative, and affordable resource where you can build anything from rockets to robots to rocking chairs. Hacksburg members must be 18+, but all ages are welcome at this open house. Attendees under 18 must be accompanied by a parent/guardian for the full duration of their visit.",
 			"date": "2023-06-18",
 			"start_time": "1:00pm",
 			"end_time": "4:00pm",
 			"offsite_location": "",
-			"offered_online": "false",
-			"offered_in_person": "true",
-			"cost": 0,
-			"image": "tbd.jpg",
+			"offered_online": false,
+			"offered_in_person": true,
+			"member_price": 0,
+			"non_member_price": 0,
+			"image": "locker_room.jpg",
 			"meetup_link": "https://www.meetup.com/hacksburgva/events/292997582/"
 		},
 		{
@@ -22,25 +23,12 @@
 			"start_time": "1:00pm",
 			"end_time": "11:00pm",
 			"offsite_location": "Downtown Blacksburg",
-			"offered_online": "false",
-			"offered_in_person": "true",
-			"cost": 0,
-			"image": "tbd.jpg",
+			"offered_online": false,
+			"offered_in_person": true,
+			"member_price": 0,
+			"non_member_price": 0,
+			"image": "summer_solstice_fest.jpg",
 			"meetup_link": "https://www.meetup.com/hacksburgva/events/293868702/"
-		},
-		{
-			"title": "Shop Work Day",
-			"subtitle": "Many hands make light work",
-			"description": "As part of reopening the workshop, we need to reorganize the space and dispose of excess materials that have built up over time. To address this, we will be holding a shop cleaning day where we will sort through our storage and rearrange some tools in the woodshop and metalshop.<br>If you have any materials stored in the workshop (outside of a locker) that you do not want thrown out, please attend either the regular meeting this Tuesday or, preferably, the shop work day itself. Attendees on Saturday will get first dibs on materials that are being discarded, but <b>must remove them from the workshop</b>.<br>Please consider attending all or part of the event if you are available. Lunch (pizza or similar) will be provided!",
-			"date": "2023-06-11",
-			"start_time": "10:00am",
-			"end_time": "4:00pm",
-			"offsite_location": "",
-			"offered_online": "false",
-			"offered_in_person": "true",
-			"cost": 0,
-			"image": "tbd.jpg",
-			"meetup_link": ""
 		}
 	]
 }

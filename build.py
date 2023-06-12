@@ -1,4 +1,4 @@
-import json, os, shutil
+import json, os, shutil, urllib.parse
 from datetime import datetime
 
 def sort_posts():
@@ -39,16 +39,16 @@ def json_to_html():
 
 	html = ""
 	for post in posts:
-		html += '\n\t\t\t\t\t<div class="post">\n'
-		html += '\t\t\t\t\t\t<div class="post_header">\n'
-		
 		date = post["date"]
 		start_time = post["start_time"]
 		end_time = post["end_time"]
 
+		html += f'\n\t\t\t\t\t<div class="post" data-isodate="{date}">\n'
+		html += '\t\t\t\t\t\t<div class="post_header">\n'
+		
 		if date and start_time and end_time:
 			calendar_day = datetime.strptime(post["date"], '%Y-%m-%d').day
-			html += '\t\t\t\t\t\t\t<div class="calendar_link noselect">\n'
+			html += f'\t\t\t\t\t\t\t<div class="calendar_link noselect">\n'
 			html += f'\t\t\t\t\t\t\t\t<div class="circled_date">{calendar_day}</div>\n'
 			
 			month_int = int(post["date"].split("-")[1])
@@ -107,13 +107,14 @@ def json_to_html():
 		else:
 			html += f'\t\t\t\t\t\t\t\t\t<b>Cost</b>: ${post["member_price"]} for Hacksburg members; ${post["non_member_price"]} for non-members. Pay in person or online at <a href="paypal.me/hacksburg">paypal.me/hacksburg</a>.\n'
 
-		
-		
 		meetup_link = post["meetup_link"]
+		
 		if post["meetup_link"]:
 			html += f'\t\t\t\t\t\t\t\t\t<a class="button rsvp_button" href="{meetup_link}">RSVP on Meetup</a>\n'
 			html += '\t\t\t\t\t\t\t\t\t<div class="below_button_text">\n'
-			html += '\t\t\t\t\t\t\t\t\t\tor <a href="mailto:rsvp@hacksburg.org" target="_blank">RSVP by Email</a>\n'
+			subject = f'RSVP for {post["title"]}'
+			body = f'I am confirming my RSVP for \"{post["title"]}\" on {formatted_date_str} from {time_string}.'
+			html += f'\t\t\t\t\t\t\t\t\t\tor <a href="{build_mailto(subject, body)}" target="_blank">RSVP by Email</a>\n'
 			html += '\t\t\t\t\t\t\t\t\t</div>\n'
 		
 		html += '\t\t\t\t\t\t\t\t</div>\n'
@@ -128,6 +129,15 @@ def date_suffix(day):
         return "th"
     else:
         return ["st", "nd", "rd"][day%10 - 1]
+        
+        import urllib.parse
+
+def build_mailto(subject, body):
+    subject = urllib.parse.quote(subject)
+    body = urllib.parse.quote(body)
+    return f'mailto:rsvp@hacksburg.org?subject={subject}&body={body}'
+
 
 if __name__ == "__main__":
 	build_index()
+	print("Build complete!")

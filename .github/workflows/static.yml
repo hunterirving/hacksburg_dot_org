@@ -46,6 +46,8 @@ jobs:
           git add -A
           git commit -m "used posts.json to build index.html" || exit 0
           git push
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

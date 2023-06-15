@@ -47,7 +47,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 			// Insert the past events marker before the current post
 			let marker = document.createElement('div');
 			marker.classList.add('past_events_marker');
-			marker.innerHTML = `<div class="past_text">Past Events</div><div class="past_line"></div>`;
+			marker.innerHTML = `<div class="past_text noselect">Past Events</div><div class="past_line"></div>`;
 			parent.appendChild(marker);
 			pastEventsAdded = true;
 		}

@@ -2,7 +2,7 @@ import json, os, shutil, urllib.parse
 from datetime import datetime
 
 def sort_posts():
-	print("Sorting posts by date...")
+	print("Sorting posts.json by date...")
 	with open('posts.json', 'r+') as json_file:
 		data = json.load(json_file)
 
